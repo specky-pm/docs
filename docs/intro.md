@@ -2,46 +2,100 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Getting Started with Specky
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **Specky-Package-Manager (spm) in less than 5 minutes**.
 
-## Getting Started
+## What is Specky?
 
-Get started by **creating a new site**.
+Specky is a tool for creating, sharing, and downloading component specifications to be used when building applications. In this new age of AI-driven agentic coding, requirements are more important than ever. Specky helps developers share component specifications, just like they do with libraries.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## What you'll need
 
-### What you'll need
+- Basic understanding of component-based architecture
+- Familiarity with command-line tools
+- A terminal or command prompt
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Install Specky
 
-## Generate a new site
+The Specky-Package-Manager (spm) is a standalone CLI tool that can be installed using various package managers.
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+### macOS (using Homebrew)
 
 ```bash
-cd my-website
-npm run start
+brew install spm
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### Linux/Windows
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Download the appropriate binary for your system from the [official Specky releases page](https://github.com/specky/releases).
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+You can verify the installation by running:
+
+```bash
+spm --version
+```
+
+## Initialize a new component specification
+
+Create a new component specification project using the init command:
+
+```bash
+spm init my-component
+cd my-component
+```
+
+The `spm init` command creates a basic directory structure with template files:
+- spec.json: contains metadata about the component
+- component.md: describes the component in detail
+- datamodel.json (optional): models any entities the component may rely on
+- features/ directory: for gherkin feature specifications
+
+## Working with specifications
+
+### Install dependencies
+
+If your component specification depends on other specifications, you can install them:
+
+```bash
+spm install user-component --save
+```
+
+### Validate your specification
+
+Ensure your specification is valid:
+
+```bash
+spm validate
+```
+
+### Visualize component relationships
+
+See how your component relates to others:
+
+```bash
+spm viz --format=svg
+```
+
+### Test your specification
+
+Run tests for your component specification:
+
+```bash
+spm test
+```
+
+### Generate documentation
+
+Create documentation from your specification:
+
+```bash
+spm docs
+```
+
+## Next Steps
+
+Now that you've created your first component specification, you can:
+- Learn more about [Component Specs](../component-specs)
+- Explore the [Specky Commands](../specky-commands)
+- Check out [Best Practices](../best-practices) for creating specifications
