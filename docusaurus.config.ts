@@ -68,10 +68,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Specky Package Manager Docs',
+      title: 'Specky Package Manager (spm) Docs',
       logo: {
         alt: 'Specky Logo',
-        src: 'img/logo.svg',
+        src: 'img/bacon-32px.png',
       },
       items: [
         {
@@ -82,7 +82,7 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/specky-pm',
           label: 'GitHub',
           position: 'right',
         },
@@ -120,6 +120,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
+            {
+              label: 'About',
+              to: '/about',
+            },
             {
               label: 'Blog',
               to: '/blog',

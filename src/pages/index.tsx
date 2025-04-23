@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import IndexMarkdown from './front-page.mdx';
+import FrontPageMdx from './front-page.mdx';
 
 import styles from './index.module.css';
 
@@ -39,7 +39,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         {/* <HomepageFeatures /> */}
-        <IndexMarkdown></IndexMarkdown>
+        <FrontPageMdx></FrontPageMdx>
       </main>
     </Layout>
   );
