@@ -1,0 +1,40 @@
+# Why Specky?
+
+Now that we can use AI to generate all our applications, the **big pain** is writing PRDs (Product Requirement Documents). 
+You have to sit there like a chump and think about all the **requirements and edge cases** of
+the various **components** so your Agent doesn't go off and make random decisions for you. 
+It takes forever!
+
+Well, what if some other chump already thought about the requirements you're working on?
+You could **reuse** those requirements and save yourself a lot of time and trouble!
+
+Specky makes it easy to share requirements so you can quickly build a reliable PRD.
+
+# How Specky Works
+
+Here's what a Specky application/project looks like:
+
+<img src="/img/specky-project-model.png" alt="Specky Project Model" width="600" />
+
+- you use the Specky CLI (spm) to install dependencies from the Specky registry in the `components` directory
+- you define the specifications for the app you're building in the `app` directory, which has the same structure as a components
+- once you're finished defining the specification for your app, you use `specky spec` to generate a detailed PRD and instructions for your Agent coder
+- tell the Agent to execute the instructions in `@instructions.md`
+
+# Why Specky Matters
+
+There’s a reason business analysts exist. Business processes and rules often require specialist knowledge that the average developer doesn’t have. 
+Are you aware of the rules for creating invoices in Liechtenstein? Do you know how procurement approvals work in a multinational corporation? 
+What about which data privacy constraints apply in regulated industries?
+
+Specky makes it possible to share and reuse a vast ocean of domain specific knowledge that was previously locked in the heads of experts.
+
+# What's up with the name?
+
+- Spec is short for "specification". 
+- Speck is German for bacon. 
+- Everyone loves bacon. 
+- I thought it would be funny. 
+- Pleaes excuse my strange sense of humor.
+
+Love, James

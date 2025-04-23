@@ -28,6 +28,7 @@ brew install spm
 
 ### Linux/Windows
 
+// FIXME
 Download the appropriate binary for your system from the [official Specky releases page](https://github.com/specky/releases).
 
 You can verify the installation by running:
@@ -96,6 +97,6 @@ spm docs
 ## Next Steps
 
 Now that you've created your first component specification, you can:
-- Learn more about [Component Specs](../component-specs)
-- Explore the [Specky Commands](../specky-commands)
-- Check out [Best Practices](../best-practices) for creating specifications
+- Learn more about [Component Specs](../component-specs) // FIXME 
+- Explore the [Specky Commands](../specky-commands) // FIXME 
+- Check out [Best Practices](../best-practices) for creating specifications // FIXME

@@ -21,3 +21,10 @@
   align-items: center;
   justify-content: center;
 }
+
+main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}

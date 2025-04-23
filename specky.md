@@ -36,7 +36,7 @@ The goal here is to maximise the usefulness of requirements so that they can be 
 
 The Specky-Package-Manager CLI (spm) has the following commands. You will find these very similar to NPM.
 
-`spm init [name]` - Initialize a new component specification project. Creates a basic directory structure with template files.
+`spm app [name]` - Initialize a new Spekcy project. Creates a basic directory structure with template files.
 
 `spm install [spec]` - Download and install a component specification from the registry. Alias: `spm i`
   - `spm install [spec]@[version]` - Install a specific version of a component specification

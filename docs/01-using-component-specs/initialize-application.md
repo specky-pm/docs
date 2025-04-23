@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Initialize a Specky Project
 
-Getting started with Specky is quick and easy. This guide will walk you through creating your first component specification project.
+Getting started with Specky is quick and easy. This guide will walk you through creating your first application specification project.
 
 ## What is a Specky Project?
 
-A Specky project is a collection of component specifications that define the functional requirements of your application components. These specifications can be shared, reused, and implemented in any programming language or framework.
+A Specky project is a collection of component specifications that define the functional requirements of your application. These specifications can be shared, reused, and implemented in any programming language or framework.
 
 ## Prerequisites
 
@@ -18,10 +18,10 @@ Before you begin, make sure you have:
 
 ## Creating Your First Project
 
-To create a new Specky project, use the `spm init` command:
+To create a new Specky project, use the `spm app` command:
 
 ```bash
-spm init my-first-project
+spm app my-first-project
 ```
 
 This command creates a new directory with the name you specified (in this case, "my-first-project") and sets up the basic structure for your Specky project.
@@ -67,5 +67,5 @@ Now that you've initialized your Specky project, you're ready to:
 - [Install existing specifications](./install-specifications.md)
 
 :::tip
-Use `spm help init` to see all available options for the init command.
+Use `spm help app` to see all available options for the init command.
 :::

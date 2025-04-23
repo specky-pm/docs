@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Install and Manage Specifications
@@ -60,17 +60,16 @@ By default, installed specifications are added to your project's `spec.json` fil
 The `spm install` command has several useful options:
 
 - `--save` or `-S`: Add the specification to dependencies (default)
-- `--save-dev` or `-D`: Add the specification to devDependencies
 - `--no-save`: Install without adding to dependencies
 - `--exact` or `-E`: Install the exact version (without ^ or ~ version range)
 
 Example:
 
 ```bash
-spm install product-component --save-dev --exact
+spm install product-component --save --exact
 ```
 
-This installs the product-component as a development dependency with an exact version.
+This installs the product-component as a dependency with an exact version.
 
 ## Listing Installed Specifications
 
@@ -121,6 +120,8 @@ This reads the `spec.json` file and installs all the specifications listed in th
 
 ### Linking Local Specifications
 
+// FIXME: do we really need this feature?
+
 During development, you might want to work on multiple specifications at the same time. You can use the `spm link` command to create symbolic links between projects:
 
 1. In the directory of the specification you want to link:
@@ -149,4 +150,4 @@ This creates a symbolic link instead of installing from the registry, allowing y
 Now that you know how to install and manage specifications, you can:
 - [Update your specifications](./update-specifications.md)
 - [Search for specifications](./search-specifications.md) in the registry
-- [Validate your specifications](./validate-specifications.md)
+- [Validate your specifications](../creating-component-specs/validate-specifications)
